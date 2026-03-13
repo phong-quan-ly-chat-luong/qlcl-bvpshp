@@ -117,10 +117,27 @@ body {
   animation: spin 1s linear infinite;
 }
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* --- Tối ưu Admin Mobile --- */
+/* Ẩn thanh cuộn nhưng vẫn cho phép cuộn ngang (dùng cho menu và bảng) */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Thu gọn text trong bảng trên mobile */
+@media (max-width: 640px) {
+  .admin-table-cell {
+    padding: 0.5rem !important; /* Giảm padding */
+    font-size: 0.75rem !important; /* Chữ nhỏ hơn */
   }
-  100% {
-    transform: rotate(360deg);
+  .admin-action-btn {
+    padding: 0.25rem !important;
   }
 }
