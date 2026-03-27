@@ -84,6 +84,7 @@ const LIST_NHAN_VIEN = [
   "Phòng Điều dưỡng",
   "Phòng Công tác xã hội",
   "Khoa Dược",
+  "Khoa Dinh dưỡng",
   "Khoa Kiểm soát nhiễm khuẩn",
 ]
   .concat(LIST_NGOAI_TRU)
