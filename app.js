@@ -82,6 +82,7 @@ const LIST_NHAN_VIEN = [
   "Phòng Tài chính kế toán",
   "Phòng Quản lý chất lượng",
   "Phòng Điều dưỡng",
+  "Phòng Công tác xã hội",
   "Khoa Dược",
   "Khoa Kiểm soát nhiễm khuẩn",
 ]
