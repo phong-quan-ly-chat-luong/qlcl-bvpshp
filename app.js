@@ -86,6 +86,10 @@ const LIST_NHAN_VIEN = [
   "Khoa Dược",
   "Khoa Dinh dưỡng",
   "Khoa Kiểm soát nhiễm khuẩn",
+  "Vật tư y tế",
+  "Chỉ đạo tuyến",
+  "Nghiên cứu khoa học",
+  "Phòng Công nghệ thông tin",
 ]
   .concat(LIST_NGOAI_TRU)
   .concat(LIST_NOI_TRU);
@@ -1282,7 +1286,7 @@ const db = {
         let pyData = {};
         try {
           pyData = JSON.parse(row.python_data || "{}");
-        } catch (e) {}
+        } catch (e) { }
         return {
           ...row,
           id:
@@ -1333,7 +1337,7 @@ const app = {
           JSON.stringify(SESSION_CONFIG),
         );
       }
-    } catch (e) {}
+    } catch (e) { }
   },
   goHome() {
     this.hideAllViews();
